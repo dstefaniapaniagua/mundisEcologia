@@ -1,0 +1,1318 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "sans-serif", "Verdana", "Arial";
+}
+
+/* Header */ 
+
+header {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    height: 3.5rem;
+	border-bottom: 3px solid #9ab221;
+    z-index: 2;
+    height: 72px;
+
+}
+
+header div {
+    max-width: 1024px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.ancla:before {       
+    display: block;       
+    content: " ";  
+    height: 72px;       
+    visibility: hidden; 
+    margin-top: -72px;
+} 
+
+
+
+h1 {
+    background-image: url("imagenes/logo-200x43.png");
+    width: 200px;
+    height: 43px;
+    background-repeat: no-repeat;
+    font-size: 0;
+    align-self: center;
+}
+
+
+
+
+nav ul {
+    display: flex;
+    padding-top: 9px;
+}
+
+nav li {
+    list-style: none;
+    align-items: center;
+    padding: 0.5rem;
+    text-transform: uppercase; 
+    margin-left: 1px;
+   
+} 
+
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: darkgray;
+}
+
+
+nav ul li a:hover {
+    color: #8da921;
+}
+
+
+/* Banner */
+
+
+#noticias {
+    max-width: 1024px;
+    margin: auto;
+    position: relative;
+    padding-top: 3rem;
+}
+
+ 
+#indicador {
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+    position: absolute;
+    top: 85%;
+    left: calc(50% - 90px);
+}
+
+#indicador a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #edebba;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+    font-size: 0;
+    margin: 1rem;
+}
+
+
+.banner {
+    display: grid;
+    overflow: hidden;
+}
+
+.banner div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    opacity: 0;
+    transition: opacity 0.5s;
+    width: 80%;
+}
+
+.banner div:target {
+    opacity: 1;
+}
+
+
+
+.banner div:first-child {
+    background-image: url("imagenes/banner1-1024x400.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+	height: 400px;
+    color: white;
+    opacity: 1;
+    padding-top: 3rem;
+}
+
+.banner div:nth-child(2) {
+    background-image: url("imagenes/banner2-1024x400.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    color: white;
+    padding-top: 3rem;
+}
+
+.banner div:last-child {
+    background-image: url("imagenes/banner3-1024x400.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    color: white;
+    padding-top: 3rem;
+}
+
+.banner .titulo {
+    background-color:#8da921;
+    display: inline-block;
+    padding: 0.3rem;
+    width: 16%;
+    text-align: center;
+    border-radius: 3px;
+    margin: 1rem 0 0 2rem;
+    color: white;
+
+}
+
+
+.banner h2 {
+    margin: 1rem 0 1rem 2rem;
+    color: white;
+    text-align: left;
+}
+
+.banner p {
+    margin-left: 2rem;
+    color: white;
+}
+ 
+.banner div a {
+    text-decoration: none;
+    padding: 0.4rem;
+    color: white;
+    border:  white 0.1rem solid;
+    border-radius: 3px;
+    width: 6rem;
+    text-align: center;
+    margin: 2rem 0 0 2rem;
+    
+}
+
+.banner div a:hover {
+    background-color: #119347;
+}
+
+
+/*tendencias*/
+
+#tendencias {
+    max-width: 1024px;
+    margin: auto;
+    
+}
+
+#tendencias div {
+    display: inline-block;
+    padding: 2rem;
+    margin-left: 3.5rem;
+}
+
+#tendencias h2 {
+    text-align: center;
+    color: #698d20;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#tendencias p {
+    text-align: center;
+}
+
+/* main*/
+
+main {
+	max-width: 1024px;
+	margin: auto;
+	
+}
+
+main h2 {
+    text-align: center;
+    color: #698d20;
+    margin-top: 1rem;
+    
+}
+article {
+	margin:auto;
+	max-width: 1024px;
+	padding-bottom: 2rem;
+}
+
+article h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}	
+
+article p {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+article a {
+	text-decoration: none;
+	color: white;
+	background-color: mediumaquamarine;
+	border-radius: 4px;
+	padding: 4px;
+	margin-bottom: 10px;
+
+}
+
+
+article div {
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	margin-top: 7rem;
+	margin-bottom: 7rem;
+	padding-bottom: 10px;
+
+	
+}
+article div div {
+	display: block;
+	width: 60%;
+	margin-right: 10px;
+	border: 0;
+}
+
+article img {
+	vertical-align: top;
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+article div h3 {
+	color: mediumaquamarine;
+	padding-top: 2rem;.
+    
+}
+
+main div {
+    max-width: 1024px;
+	margin: auto;
+}
+section div h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+    text-align: right;
+}
+
+figure{
+	text-align: center;
+}
+
+figcaption {
+	font-size: 0.8rem;
+	text-align: center;
+} 
+
+
+/* pastillas*/
+
+#tematicas {
+		max-width: 1024px;
+		margin: auto;
+		padding: 20px;
+}
+#tematicas div {
+	display:flex;
+	justify-content: space-between;
+	padding: 20px 0px;
+}
+
+#tematicas div h3 {
+	font-size: 0;
+}
+#tematicas div h3:nth-child(1) {
+	background-image: url("imagenes/icono-botella.png");
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 150px;
+}	
+
+#tematicas  h3:nth-child(3) {
+	background-image: url("imagenes/icono-arbol.png");
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 150px;
+}	
+
+#tematicas h3:nth-child(5) {
+	background-image: url("imagenes/icono-reciclaje.png");
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 150px;
+	padding: 50px;
+}
+
+#tematicas div p {
+	vertical-align: center;
+	width: 150px;
+}
+
+
+/* video*/
+
+#video {
+	max-width: 1024px;
+	margin:auto;
+
+}
+
+#video h3 {
+    color: mediumaquamarine;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+#video figure{
+	padding: 3rem;
+}
+
+#video figure div {
+	width: 80vw;
+	height: calc(80vw * 480 / 853);
+	max-width: 853px;
+	max-height: 480px;
+	background: white;
+	margin: auto;
+} 
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+    border-radius: 8px;
+}
+
+
+
+/*formulario*/
+
+aside {
+    margin: auto;
+    max-width: 1024px;
+}
+
+aside h2 {
+    color: #698d20;
+    margin:auto;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+aside p {
+	width: 500px;
+    margin:auto;
+}
+
+#formulario {
+    width: 500px;
+    margin:auto;
+}
+
+
+
+aside p {
+    margin-bottom: 15px;
+}
+
+label {
+	display: inline-block;
+	font-weight: bold;
+	margin-bottom: 10px;
+    color: #698d20;
+}
+
+textarea, .texto {
+	outline: none;
+	width: 100%;
+}
+
+
+
+input {
+    border-radius: 3px;
+    padding: 0.2rem;
+    height: 1.8rem;
+    width: 75%;
+    font-size: 1rem;
+    border-color: #add9ad;
+    margin-bottom: 10px;
+} 
+
+textarea {
+	resize: none;
+	width: 100%;
+    border-radius: 3px;
+    padding: 0.2rem;
+    font-size: 1rem;
+    border-color: #add9ad;
+}	 
+
+.botones {
+    text-align: right;
+    width: 500px;
+
+}
+#enviar, #cancelar {
+	width: 120px;
+	color: white;
+	padding: 10px;
+	border-radius: 3px;
+	border: 1px solid;
+    height: 50px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#enviar {
+        background-color: green;
+   
+}
+
+#cancelar {
+        background-color: red;
+}
+
+
+/* footer*/
+footer {
+	background-color: black;
+    width: 100%;
+    display: block;
+    
+}
+footer > div {
+	max-width: 1024px;
+	display: block;
+	justify-content: center;
+	margin: auto;
+	padding-top: 10px;
+}
+
+/*datos*/ 
+
+div span {
+    justify-content: center;
+    color: white;
+    margin-left: 9rem;
+    padding: 3rem;
+}
+
+
+div details {
+   text-align: center;
+    padding: 1.5rem;
+    margin:auto;
+    width:50%;
+}
+
+details summary {
+    width: 100%;
+    color:  #edebba;
+}
+
+
+details #datos li:first-child {
+    padding-top: 0.5rem;
+}
+
+details #datos li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+}
+
+details #datos li span {
+    color: #089445;
+    margin: 0;
+    padding: 0;
+
+}
+
+#datos li{
+    color: white ;
+}
+
+/*Redes*/ 
+
+footer div div:first-of-type {
+  text-align: center;
+}
+
+ul #redes {
+    justify-content: center;
+}
+#redes a {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+#redes li {
+    display: inline-block;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+   
+}
+
+#redes li:first-of-type {
+    background-image: url("imagenes/redes/facebook-verde-32x32.png");
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+#redes li:first-of-type:hover {
+    background-image: url("imagenes/redes/facebook-32x32.png");
+    background-repeat: no-repeat;
+}
+
+#redes li:nth-of-type(2) {
+    background-image: url("imagenes/redes/twitter-verde-32x32.png");
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+#redes li:nth-of-type(2) {
+    background-image: url("imagenes/redes/twitter-verde-32x32.png");
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+#redes li:nth-of-type(2):hover {
+    background-image: url("imagenes/redes/twitter-32x32.png");
+    background-repeat: no-repeat;
+}
+
+#redes li:nth-of-type(3) {
+    background-image: url("imagenes/redes/instagram-verde-32x32.png");
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+#redes li:nth-of-type(3):hover {
+    background-image: url("imagenes/redes/instagram-32x32.png");
+    background-repeat: no-repeat;
+}
+
+#redes li:last-of-type {
+    background-image: url("imagenes/redes/youtube-verde-32x32.png");
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+#redes li:last-of-type:hover {
+    background-image: url("imagenes/redes/youtube-32x32.png");
+    background-repeat: no-repeat;
+}
+
+
+/* Comienzo botón "volver arriba" */
+
+#arriba {
+    position: fixed;
+    bottom: 4%;
+    right: 4%;
+    background-image:  url("imagenes/flecha-arriba-32x32.png");
+    background-repeat: no-repeat;
+}
+
+#arriba a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+/* Fin "volver arriba" */
+
+
+@media (min-width: 835px) and (max-width:1012px) {
+   #tendencias div {
+    display: inline-block;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+    
+}
+
+
+@media (max-width: 834px){
+    
+    header{
+         height: 145px;
+    
+    }
+    header div {
+        display: block;
+        max-width: 826px;
+        padding: 0 1rem 0 1rem;
+        justify-content: space-around;
+        
+       
+    }
+    
+    
+    .ancla:before {       
+        display: block;       
+        content: " ";  
+        height: 145px;       
+        visibility: hidden; 
+        margin-top: -145px;
+    } 
+
+    
+    #noticias {
+        padding-top: 5rem;
+    }
+    
+    h1 {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        
+    }
+    
+    nav ul {
+        text-align: center;
+        margin-left: 2.5rem;
+    
+    }
+    
+    #tendencias div {
+    display: inline-block;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-left: 6rem;
+    
+    }
+    
+    #tendencias div:last-child {
+        display:block;
+        margin:auto;
+    }
+    
+    main article {
+        max-width: 826px;
+        margin:auto;
+        padding: 0 2rem 0 2rem;
+        
+    }
+    
+
+    figure div iframe{
+
+        padding-right: 5rem;
+    }
+    
+    footer div div:first-of-type {
+        margin:auto;
+        margin-left: 9rem;
+        padding: 2rem;
+    }
+    
+    #video {
+        margin-left: 3rem;
+    }
+    
+}
+
+
+    
+@media (min-width: 671) and (max-width: 799px) {
+    
+    #tendencias div {
+        max-width: 578px;
+        display: inline-block;
+        justify-content: center;
+    
+    }
+    
+    footer div div:first-of-type {
+        margin:auto;
+        margin-left: 5rem;
+        padding: 0;
+    }
+    #redes li {
+        display:inline-flex;
+        justify-content: space-around;
+        margin: 1rem;
+        padding: 0;
+    }
+    
+    
+    
+}
+
+@media (min-width:586px) and (max-width:670px){
+    
+     header {
+        height: calc(3.5rem + 265px);
+        position: relative;
+    }
+    
+    .ancla:before {       
+        display: block;       
+        content: " ";  
+        height: 145px;       
+        visibility: hidden; 
+        margin-top: -145px;
+    } 
+    
+    h1 {
+
+        text-align: center;
+        margin-top: 2.5rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    nav {
+        width: 100%;
+        margin: auto;
+    }
+    
+    nav ul {
+       flex-direction: column;
+    }
+    
+    nav ul li {
+        text-align: center;
+        padding: 0.5rem;
+        justify-content: center;
+        padding-right: 3rem;
+        
+    
+    }
+    
+    nav ul li a {
+        background-color: green;
+        border-radius: 3px;
+        color: white;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        display: block;
+    }
+    
+    #noticias {
+        padding: 0;
+    }
+    .banner .titulo {
+        width: 25%;
+        
+    }
+    
+     #tendencias div {
+       
+        display: block;
+         margin:auto;
+         margin-bottom: 1rem;
+    
+    }
+    
+    
+    main article h2 {
+        text-align: center;
+        margin-right: 6rem;
+    }
+    main article p {
+        padding-right:  2rem;
+        width: 90%;
+    }
+    
+    
+    #video {
+        margin-left: 2rem;
+    }
+    
+    aside p {
+        margin-left: 2rem;
+
+    }
+    
+    footer div div:first-of-type {
+        margin:auto;
+        margin-left: 10rem;
+        padding: 0;
+    }
+    #formulario {
+        margin-left: 4rem;
+      
+    }
+    #redes li {
+        display:inline-flex;
+        justify-content: space-around;
+        margin: 1rem;
+        padding: 0;
+    }
+}
+
+ 
+@media (max-width: 577px){
+    
+     header {
+        height: calc(3.5rem + 265px);
+        position: relative;
+    }
+    
+    h1 {
+
+        text-align: center;
+        margin-top: 2.5rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    nav {
+        width: 100%;
+        margin: auto;
+    }
+    
+    nav ul {
+       flex-direction: column;
+    }
+    
+    nav ul li {
+        text-align: center;
+        padding: 0.5rem;
+        justify-content: center;
+        padding-right: 3rem;
+        
+    
+    }
+    
+    nav ul li a {
+        background-color: green;
+        border-radius: 3px;
+        color: white;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        display: block;
+    }
+    
+    #noticias {
+        padding: 0;
+    }
+    
+    
+     .banner div:first-child {
+        background-image: url("imagenes/banner1-577x400.jpg");
+        background-repeat: no-repeat;
+        
+    }
+
+    .banner div:nth-child(2) {
+        background-image: url("imagenes/banner2-577x400.jpg");
+        background-repeat: no-repeat;
+
+    }
+
+    .banner div:last-child {
+        background-image: url("imagenes/banner3-577x400.jpg");
+        background-repeat: no-repeat;
+    }
+        
+    .banner div a {
+        text-align: center;
+
+    }
+    
+    .banner .titulo {
+        width: 25%;
+        
+    }
+
+    .banner div a:hover {
+        background-color: #119347;
+    }
+
+    
+    #tendencias p {
+        margin-bottom: 1rem;
+    }
+    
+        
+    
+
+
+    
+    #tendencias div {
+        max-width: 577px;
+        display: inline-block;
+        justify-content: center;
+    
+    }
+    
+   
+    
+    
+    main article {
+        max-width: 577px;
+        padding: 0 2rem 0 2rem;
+        border-top: 1px solid green;
+        border-bottom: 1px solid green;
+    }
+
+    article div {
+        display: block;
+    }
+    
+    article div div {
+        flex-direction: row;
+        width: 100%;
+    } 
+    
+     article div div a {
+        float: right;
+        margin-right: 1.8rem;
+       
+    }
+    
+    article div div p {
+        margin-right: 1.5rem;
+    }
+    
+    #video p {
+        padding: 0 2rem 0 2rem;
+    }
+    figure div iframe{
+        margin:auto;
+        padding: 0 2rem 0 2rem;
+    }
+    
+    
+    
+    fotter div {
+        max-width: 577px;
+        padding: 0;
+    }
+    
+    div span {
+        margin-left: 2rem;
+        justify-content: center;
+         
+    }
+    details {
+        padding-left: 5px;
+        width: 577px;
+    }
+    
+    footer div div:first-of-type {
+        margin:auto;
+        margin-left: 8rem;
+        padding: 0;
+    }
+    
+    #redes li {
+        display:inline-flex;
+        justify-content: space-around;
+        margin: 1rem;
+        padding: 0;
+    }
+    
+    
+}
+
+@media (min-width: 401px) and (max-width: 576px) {
+    header {
+        height: calc(3.5rem + 265px);
+        position: relative;
+    }
+    
+    h1 {
+
+        text-align: center;
+        margin-top: 2.5rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    nav {
+        width: 100%;
+        margin: auto;
+    }
+    
+    nav ul {
+       flex-direction: column;
+    }
+    
+    nav ul li {
+        text-align: center;
+        padding: 0.5rem;
+        justify-content: center;
+    
+    }
+    
+    nav ul li a {
+        background-color: green;
+        border-radius: 3px;
+        color: white;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        display: block;
+    }
+    
+    nav ul li a:link {
+        color: white;
+    }
+    
+
+    nav ul li a:active {
+        color: #E1E323;
+    }
+    
+    #noticias {
+        padding-top: 0;
+    }
+    
+     #tendencias {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #tendencias div:last-of-type {
+       margin-left: 8rem;
+    }
+    
+    article p {
+        padding-right: 1rem;
+    }
+    
+    article div div {
+        flex-direction: column;
+        width: 100%;
+        order: 0;
+    }
+    
+    article div div a {
+        float: right;
+        margin-right: 2.5rem;
+    }
+    article div figure {
+        margin-right: 2.5rem;
+    }
+    
+
+    
+}
+
+
+@media (max-width: 400px){
+    header {
+        height: calc(3.5rem + 265px);
+        position: relative;
+    }
+    
+    h1 {
+
+        text-align: center;
+        margin-top: 2.5rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    nav {
+        width: 100%;
+        margin: auto;
+    }
+    
+    nav ul {
+       flex-direction: column;
+    }
+    
+    nav ul li {
+        text-align: center;
+        padding: 0.5rem;
+        justify-content: center;
+    
+    }
+    
+    nav ul li a {
+        background-color: green;
+        border-radius: 3px;
+        color: white;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        display: block;
+    }
+    
+    nav ul li a:link {
+        color: white;
+    }
+    
+
+    nav ul li a:active {
+        color: #E1E323;
+    }
+    
+    #noticias {
+        padding-top: 0;
+    }
+    .banner div:first-child {
+        background-image: url("imagenes/banner1-400x400.jpg");
+       
+
+    }
+
+    .banner div:nth-child(2) {
+        background-image: url("imagenes/banner2-400x400.jpg");
+       
+    }
+
+    .banner div:last-child {
+        background-image: url("imagenes/banner3-400x400.jpg");
+        
+    }
+    
+    
+    
+    .banner .titulo {
+        width: 30%;
+       
+    }
+
+   
+
+    .banner h2 {
+        margin: 1rem 0 0 2rem;
+       
+        text-align: left;
+      
+    }
+
+    .banner p {
+        
+        display: none;
+    }
+
+    .banner div a {
+        padding: 0.2rem;
+        width: 6rem;
+        text-align: center;
+
+
+    }
+    
+    
+    #tendencias {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #tendencias h2 {
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+
+    
+    #tendencias p {
+        max-width: 400px;
+        padding: 0 0.4rem 0 0.4rem;
+    }
+    
+    #tendencias div:first-child{
+        margin:auto;
+        width: 100%;
+        
+
+    }
+    
+    
+    #tendencias div:nth-child(2) {
+        margin:auto;
+        width: 100%;
+    
+    }
+     
+    #tendencias div:last-child {
+        margin:auto;
+        width: 100%;
+    
+    }
+    
+
+     
+    main article {
+        max-width: 400px;
+        padding: 0 3rem 0 2rem;
+        
+    }
+    
+    article div {
+        flex-direction: column;
+    }
+    
+
+    article div div {
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    
+    main article p {
+        font-size: 1.2rem;
+    }
+    
+    
+    
+    figure div iframe{
+        max-width: 400px;
+        padding-right: 3rem;
+    }
+    
+    #video p {
+        font-size: 1.2rem;
+         padding: 0 2rem 0 2rem;
+        
+    }
+    
+    aside {
+    
+    max-width: 400px;
+        
+    }
+    
+    aside p {
+        max-width: 400px;
+        padding: 0 1rem 0 1.4rem;
+        font-size: 1.2rem;
+    }
+    
+    #formulario{
+        max-width: 350px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .botones {
+        text-align: right;
+        width: 350px;
+
+    }
+    
+    footer div div:first-of-type {
+        margin:auto;
+        margin-left: 4rem;
+        padding: 0;
+    }
+    #redes li {
+        display:inline-flex;
+        justify-content: space-around;
+        margin: 1rem;
+        padding: 0;
+    }
+    
+
+    
+}

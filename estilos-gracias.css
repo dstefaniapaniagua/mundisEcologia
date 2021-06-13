@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "sans-serif", "Verdana", "Arial";
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    height: 3.5rem;
+	border-bottom: 3px solid #9ab221;
+    z-index: 2;
+    height: 72px;
+
+}
+
+h1 {
+    background-image: url("imagenes/logo-200x43.png");
+    width: 200px;
+    height: 43px;
+    background-repeat: no-repeat;
+    font-size: 0;
+    align-self: center;
+    margin:auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+main{
+    padding-top: 5rem;
+    margin:auto;
+    width: 500px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #698d20;
+}
+
+main p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main a {
+    background-color: #698d20;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    padding: 0.3rem;
+}
+
+
+
