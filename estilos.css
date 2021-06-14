@@ -15,9 +15,7 @@ header {
 	border-bottom: 3px solid #9ab221;
     z-index: 2;
     height: 72px;
-
 }
-
 header div {
     max-width: 1024px;
     display: flex;
@@ -27,7 +25,6 @@ header div {
     margin: auto;
     padding: 10px;
 }
-
 .ancla:before {       
     display: block;       
     content: " ";  
@@ -35,9 +32,6 @@ header div {
     visibility: hidden; 
     margin-top: -72px;
 } 
-
-
-
 h1 {
     background-image: url("imagenes/logo-200x43.png");
     width: 200px;
@@ -46,48 +40,33 @@ h1 {
     font-size: 0;
     align-self: center;
 }
-
-
-
-
 nav ul {
     display: flex;
     padding-top: 9px;
 }
-
 nav li {
     list-style: none;
     align-items: center;
     padding: 0.5rem;
     text-transform: uppercase; 
-    margin-left: 1px;
-   
+    margin-left: 1px; 
 } 
-
-
 nav ul li a {
     text-decoration: none;
     display: block;
     color: darkgray;
 }
-
-
 nav ul li a:hover {
     color: #8da921;
 }
 
-
 /* Banner */
-
-
 #noticias {
     max-width: 1024px;
     margin: auto;
     position: relative;
     padding-top: 3rem;
 }
-
- 
 #indicador {
     display: flex;
     justify-content: center;
@@ -107,13 +86,10 @@ nav ul li a:hover {
     font-size: 0;
     margin: 1rem;
 }
-
-
 .banner {
     display: grid;
     overflow: hidden;
 }
-
 .banner div {
     display: flex;
     flex-direction: column;
@@ -128,9 +104,6 @@ nav ul li a:hover {
 .banner div:target {
     opacity: 1;
 }
-
-
-
 .banner div:first-child {
     background-image: url("imagenes/banner1-1024x400.jpg");
     background-repeat: no-repeat;
@@ -168,21 +141,17 @@ nav ul li a:hover {
     border-radius: 3px;
     margin: 1rem 0 0 2rem;
     color: white;
-
 }
-
 
 .banner h2 {
     margin: 1rem 0 1rem 2rem;
     color: white;
     text-align: left;
 }
-
 .banner p {
     margin-left: 2rem;
     color: white;
 }
- 
 .banner div a {
     text-decoration: none;
     padding: 0.4rem;
@@ -194,57 +163,47 @@ nav ul li a:hover {
     margin: 2rem 0 0 2rem;
     
 }
-
 .banner div a:hover {
     background-color: #119347;
 }
-
 
 /*tendencias*/
 
 #tendencias {
     max-width: 1024px;
     margin: auto;
-    
 }
-
 #tendencias div {
     display: inline-block;
     padding: 2rem;
     margin-left: 3.5rem;
 }
-
 #tendencias h2 {
     text-align: center;
     color: #698d20;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
-
 #tendencias p {
     text-align: center;
 }
 
 /* main*/
-
 main {
 	max-width: 1024px;
 	margin: auto;
 	
 }
-
 main h2 {
     text-align: center;
     color: #698d20;
-    margin-top: 1rem;
-    
+    margin-top: 1rem; 
 }
 article {
 	margin:auto;
 	max-width: 1024px;
 	padding-bottom: 2rem;
 }
-
 article h2 {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -262,7 +221,6 @@ article a {
 	border-radius: 4px;
 	padding: 4px;
 	margin-bottom: 10px;
-
 }
 
 
@@ -273,8 +231,6 @@ article div {
 	margin-top: 7rem;
 	margin-bottom: 7rem;
 	padding-bottom: 10px;
-
-	
 }
 article div div {
 	display: block;
@@ -282,18 +238,15 @@ article div div {
 	margin-right: 10px;
 	border: 0;
 }
-
 article img {
 	vertical-align: top;
     max-width: 100%;
     height: auto;
     border-radius: 3px;
 }
-
 article div h3 {
 	color: mediumaquamarine;
 	padding-top: 2rem;.
-    
 }
 
 main div {
@@ -305,19 +258,15 @@ section div h2 {
 	margin-bottom: 20px;
     text-align: right;
 }
-
 figure{
 	text-align: center;
 }
-
 figcaption {
 	font-size: 0.8rem;
 	text-align: center;
 } 
 
-
 /* pastillas*/
-
 #tematicas {
 		max-width: 1024px;
 		margin: auto;
@@ -328,7 +277,6 @@ figcaption {
 	justify-content: space-between;
 	padding: 20px 0px;
 }
-
 #tematicas div h3 {
 	font-size: 0;
 }
@@ -338,14 +286,12 @@ figcaption {
 	height: 150px;
 	width: 150px;
 }	
-
 #tematicas  h3:nth-child(3) {
 	background-image: url("imagenes/icono-arbol.png");
 	background-repeat: no-repeat;
 	height: 150px;
 	width: 150px;
 }	
-
 #tematicas h3:nth-child(5) {
 	background-image: url("imagenes/icono-reciclaje.png");
 	background-repeat: no-repeat;
@@ -353,32 +299,26 @@ figcaption {
 	width: 150px;
 	padding: 50px;
 }
-
 #tematicas div p {
 	vertical-align: center;
 	width: 150px;
 }
 
-
 /* video*/
-
 #video {
 	max-width: 1024px;
 	margin:auto;
 
 }
-
 #video h3 {
     color: mediumaquamarine;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     text-align: center;
 }
-
 #video figure{
 	padding: 3rem;
 }
-
 #video figure div {
 	width: 80vw;
 	height: calc(80vw * 480 / 853);
@@ -387,15 +327,12 @@ figcaption {
 	background: white;
 	margin: auto;
 } 
-
 iframe {
 	width: 100%;
 	height: 100%;
 	border: 0;
     border-radius: 8px;
 }
-
-
 
 /*formulario*/
 
@@ -410,37 +347,27 @@ aside h2 {
     margin-bottom: 1rem;
     text-align: center;
 }
-
 aside p {
 	width: 500px;
     margin:auto;
 }
-
 #formulario {
     width: 500px;
     margin:auto;
 }
-
-
-
 aside p {
     margin-bottom: 15px;
 }
-
 label {
 	display: inline-block;
 	font-weight: bold;
 	margin-bottom: 10px;
     color: #698d20;
 }
-
 textarea, .texto {
 	outline: none;
 	width: 100%;
 }
-
-
-
 input {
     border-radius: 3px;
     padding: 0.2rem;
@@ -450,7 +377,6 @@ input {
     border-color: #add9ad;
     margin-bottom: 10px;
 } 
-
 textarea {
 	resize: none;
 	width: 100%;
@@ -459,7 +385,6 @@ textarea {
     font-size: 1rem;
     border-color: #add9ad;
 }	 
-
 .botones {
     text-align: right;
     width: 500px;
@@ -475,16 +400,13 @@ textarea {
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
-
 #enviar {
         background-color: green;
    
 }
-
 #cancelar {
         background-color: red;
 }
-
 
 /* footer*/
 footer {
@@ -509,7 +431,6 @@ div span {
     margin-left: 9rem;
     padding: 3rem;
 }
-
 
 div details {
    text-align: center;
@@ -537,7 +458,6 @@ details #datos li span {
     color: #089445;
     margin: 0;
     padding: 0;
-
 }
 
 #datos li{
@@ -661,8 +581,6 @@ ul #redes {
         max-width: 826px;
         padding: 0 1rem 0 1rem;
         justify-content: space-around;
-        
-       
     }
     
     
@@ -689,15 +607,13 @@ ul #redes {
     nav ul {
         text-align: center;
         margin-left: 2.5rem;
-    
     }
     
     #tendencias div {
-    display: inline-block;
-    padding: 1rem;
-    margin-top: 2rem;
-    margin-left: 6rem;
-    
+        display: inline-block;
+        padding: 1rem;
+        margin-top: 2rem;
+        margin-left: 6rem;
     }
     
     #tendencias div:last-child {
@@ -709,12 +625,10 @@ ul #redes {
         max-width: 826px;
         margin:auto;
         padding: 0 2rem 0 2rem;
-        
     }
     
 
     figure div iframe{
-
         padding-right: 5rem;
     }
     
@@ -731,14 +645,12 @@ ul #redes {
 }
 
 
-    
 @media (min-width: 671) and (max-width: 799px) {
     
     #tendencias div {
         max-width: 578px;
         display: inline-block;
         justify-content: center;
-    
     }
     
     footer div div:first-of-type {
@@ -752,8 +664,6 @@ ul #redes {
         margin: 1rem;
         padding: 0;
     }
-    
-    
     
 }
 
@@ -817,9 +727,8 @@ ul #redes {
      #tendencias div {
        
         display: block;
-         margin:auto;
-         margin-bottom: 1rem;
-    
+        margin:auto;
+        margin-bottom: 1rem;
     }
     
     
@@ -831,7 +740,6 @@ ul #redes {
         padding-right:  2rem;
         width: 90%;
     }
-    
     
     #video {
         margin-left: 2rem;
@@ -941,22 +849,12 @@ ul #redes {
     #tendencias p {
         margin-bottom: 1rem;
     }
-    
-        
-    
-
-
-    
     #tendencias div {
         max-width: 577px;
         display: inline-block;
         justify-content: center;
-    
     }
-    
-   
-    
-    
+  
     main article {
         max-width: 577px;
         padding: 0 2rem 0 2rem;
@@ -1020,7 +918,6 @@ ul #redes {
         margin: 1rem;
         padding: 0;
     }
-    
     
 }
 
@@ -1103,8 +1000,6 @@ ul #redes {
         margin-right: 2.5rem;
     }
     
-
-    
 }
 
 
@@ -1175,13 +1070,10 @@ ul #redes {
     }
     
     
-    
     .banner .titulo {
         width: 30%;
        
     }
-
-   
 
     .banner h2 {
         margin: 1rem 0 0 2rem;
@@ -1199,8 +1091,6 @@ ul #redes {
         padding: 0.2rem;
         width: 6rem;
         text-align: center;
-
-
     }
     
     
@@ -1215,7 +1105,6 @@ ul #redes {
         padding-right: 0.8rem;
     }
 
-    
     #tendencias p {
         max-width: 400px;
         padding: 0 0.4rem 0 0.4rem;
@@ -1224,8 +1113,6 @@ ul #redes {
     #tendencias div:first-child{
         margin:auto;
         width: 100%;
-        
-
     }
     
     
@@ -1238,34 +1125,23 @@ ul #redes {
     #tendencias div:last-child {
         margin:auto;
         width: 100%;
-    
     }
     
-
-     
     main article {
         max-width: 400px;
         padding: 0 3rem 0 2rem;
-        
     }
     
     article div {
         flex-direction: column;
     }
-    
-
     article div div {
         flex-direction: row;
         width: 100%;
     }
-    
-    
     main article p {
         font-size: 1.2rem;
     }
-    
-    
-    
     figure div iframe{
         max-width: 400px;
         padding-right: 3rem;
@@ -1273,16 +1149,13 @@ ul #redes {
     
     #video p {
         font-size: 1.2rem;
-         padding: 0 2rem 0 2rem;
-        
+        padding: 0 2rem 0 2rem;
     }
     
     aside {
-    
-    max-width: 400px;
-        
+        max-width: 400px;  
     }
-    
+
     aside p {
         max-width: 400px;
         padding: 0 1rem 0 1.4rem;
@@ -1312,7 +1185,5 @@ ul #redes {
         margin: 1rem;
         padding: 0;
     }
-    
-
     
 }
